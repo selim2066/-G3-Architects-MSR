@@ -1,7 +1,48 @@
-body{
+/* body{
     border: 1px solid #38cc5177;
     border-color: crimson;
 
     background-color: #38cc511f;
     background-color: rgba(220, 20, 60, 0.295);
-}
+} */
+
+/* shared styles */
+.work-sans-font {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .display-flex{
+    display: flex;
+  }
+ .bg-light{
+    background-color: antiquewhite;
+ 
+ }
+
+
+  /* work-specific styles */
+  .navbar{
+    justify-content: space-between;
+  }
+  
+  .nlink {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .item{
+    margin-right: 30px;
+    list-style: none;
+  }
+
+ .text-gray{
+    color:#2e2b2b
+ }
+
+ .navbar{
+    max-width: 1440px;
+    margin: 0 auto;
+    
+ }
