@@ -92,13 +92,14 @@
 
 .b-img {
     max-width: 100%;
+    border-radius: 10px;
 
 }
 
 
 
 
-/* Main Related */
+/******************** Main Related ********************/
 
 main {
     margin: 130px auto;
@@ -107,6 +108,7 @@ main {
 .team {
     align-items: center;
     max-width: 1440px;
+    margin: 50px auto;
 }
 
 .teams-img {
@@ -114,6 +116,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 img {
@@ -170,9 +173,10 @@ img {
 .fcontainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 10px 0;
+
     justify-content: space-between;
     max-width: 1440px;
+
 
 }
 
@@ -183,6 +187,7 @@ img {
     border-radius: 8px;
     justify-content: center;
     align-items: center;
+    margin: 50px auto;
 }
 
 .ficon {
@@ -212,21 +217,89 @@ img {
 
 
 
-/* media query */
 
-@media screen and (max-width: 400px) {
+/**************** sponsor related *************/
+
+.sp-content {
+    max-width: 450px;
+}
+
+.sphead {
+    margin-top: 70px;
+    font-size: 3.3rem;
+    color: rgb(248, 4, 4);
+}
+
+.spdesc {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: rgb(126, 128, 129);
+}
+
+.sp-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 1440px;
+    margin-left: 200px;
+
+}
+
+.sp-img>img {
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+/****************** media query **************/
+
+@media screen and (max-width: 570px) {
 
     .navbar,
     .nlink,
-    .team, .fcard {
+    .fcard,
+    .team {
         flex-direction: column;
     }
 
     .intro {
+        display: flex;
+        flex-direction: column;
         margin: 10px auto;
     }
 
-    .teams-img, .fcontainer{
+    .teams-img {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    .fcontainer,
+    .sp-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-items: center;
+        margin-bottom: 25px;
+    }
+
+    .sp-img {
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        justify-items: center;
+        margin-bottom: 25px;
+
+    }
+
 }
